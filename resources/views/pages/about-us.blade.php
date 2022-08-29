@@ -13,16 +13,17 @@
                         <div class="sec-title">
                             <h2>About Us</h2>
                         </div>
-                        <div class="text">Our commitment to bring professionalism, good service & trust to the Phone
-                            repair service & maintenance business. We take immense pride in sending some of the most
-                            of professional technicians to yours phone to fix things that aren't workings.</div>
+                        <div class="text">Our goal is to make our customers happy and confident with how they look in our
+                            wigs.
+                            As one of the world’s coveted truths state, “the more, the merrier”.
+                            The wig-makers at It’s A Wig target a very wide range of customers and demographics.</div>
 
-                        <div class="message">Save time, Save money, With Quality Phone <br> Repair Service,
-                            <span>Purchase - RepairPlus</span>
+                        <div class="message">Save time, Save money, With High Quality <br> Satisfied Service,
+                            <span>Purchase </span>
                         </div>
 
                         <div class="link-box">
-                            <a href="{{url('about-us')}}" class="theme-btn btn-style-two">Contact Us</a>
+                            <a href="{{ url('about-us') }}" class="theme-btn btn-style-two">Contact Us</a>
                             <a href="{{ url('#') }}" class="theme-btn call-btn"><i class="icon la la-phone"></i> + 62
                                 867 6872</a>
                         </div>
@@ -32,10 +33,10 @@
                 <!-- Video Column -->
                 <div class="video-column col-lg-6 col-md-12 col-sm-12 wow fadeIn">
                     <div class="inner-column">
-                        <div class="float-text">I am a Computer and Mobile Expart</div>
-                        <figure class="image"><img src="assets/images/resource/image-2.jpg" alt=""></figure>
-                        <div class="link-box"><a href="https://www.youtube.com/watch?v=e_WOEL6F1YE" class="link"
-                                data-fancybox="gallery" data-caption=""><span class="icon la la-play"></span></a>
+                        <div class="float-text">High Quality Wigs</div>
+                        <figure class="image"><img src="assets/images/resource/wiggirl4.png" alt=""></figure>
+                        <div class="link-box"><a href="#" class="link" data-fancybox="gallery" data-caption=""><span
+                                    class="icon la la-play"></span></a>
                         </div>
                     </div>
                 </div>
@@ -57,20 +58,21 @@
                     <!-- Feature Block -->
                     <div class="feature-block">
                         <div class="inner-box">
-                            <span class="icon la la-wrench"></span>
-                            <h5><a href="{{url('services')}}">Free Diagnostics</a></h5>
-                            <div class="text">We is a quick and easy way of checking the set up on your Mobile
-                                Phones, Desktop & Laptop, Acessories and ect... We done its free of cost.</div>
+                            <span class="icon la la-smile-o"></span>
+                            <h5><a href="{{ url('services') }}">Fashion Conscious Designs</a></h5>
+                            <div class="text">We are proud to design our products ourselves; our specialist designers are
+                                always designing our new releases!</div>
                         </div>
                     </div>
 
                     <!-- Feature Block -->
                     <div class="feature-block">
                         <div class="inner-box">
-                            <span class="icon la la-cog"></span>
-                            <h5><a href="{{url('services')}}">Quick Repair Process</a></h5>
-                            <div class="text">WThe repair process is fast and convenient & our expert teams of
-                                Mr.Fixit repair, If you see a phone symbol in the top left corner of the screen.
+                            <span class="icon la la-group"></span>
+                            <h5><a href="{{ url('services') }}">Customer first</a></h5>
+                            <div class="text">Our customers are our very essence, after all we wouldn’t be here without
+                                you! Therefore, we always put the needs and requirements of a customer ahead of anything and
+                                everything.
                             </div>
                         </div>
                     </div>
@@ -78,17 +80,19 @@
                     <!-- Feature Block -->
                     <div class="feature-block">
                         <div class="inner-box">
-                            <span class="icon la la-clock-o"></span>
-                            <h5><a href="{{url('services')}}">24/7 Customer Support</a></h5>
-                            <div class="text">24x7 techsupport is one of the best services in the Mr.Fixit. 24x7
-                                tech support providing quality services at anytime, anywhere in the world.</div>
+                            <span class="icon la la-paint-brush"></span>
+                            <h5><a href="{{ url('services') }}">Customization Service</a></h5>
+                            <div class="text">We are extremely proud to offer our unique customization service! Whether
+                                you want your old hair back or you can’t find the exact style you’re looking for," COMPANY
+                                NAME"
+                                can make it uniquely designed for you.</div>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!--Image Column-->
-            <div class="image-column wow fadeIn" style="background-image:url(assets/images/resource/image-1.jpg);">
+            <div class="image-column wow fadeIn" style="background-image:url(assets/images/resource/wiggirl1.jpg);">
                 <figure class="image-box"><img src="assets/images/resource/image-1.jpg" alt=""></figure>
             </div>
         </div>
@@ -96,7 +100,7 @@
     <!-- End Fluid Section -->
 
     <!-- Process Section -->
-    <section class="process-section alternate">
+    {{-- <section class="process-section alternate">
         <div class="auto-container">
             <div class="row">
                 <!-- Process Block -->
@@ -130,14 +134,14 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!--End Process Section -->
 
     <!-- Team Section -->
     <section class="team-section">
         <div class="auto-container">
             <div class="sec-title text-center">
-                <h2>Expert Worker</h2>
+                <h2> Our Professional Stylists</h2>
             </div>
 
             <div class="row">
@@ -147,7 +151,7 @@
                         <div class="image-box">
                             <figure class="image"><img src="assets/images/resource/team-1.jpg" alt=""></figure>
                             <div class="overlay-box">
-                                <a href="{{url('team')}}" class="icon"><span class="la la-phone"></span></a>
+                                <a href="{{ url('team') }}" class="icon"><span class="la la-phone"></span></a>
                                 <ul class="social-links">
                                     <li><a href="{{ url('#') }}"><i class="la la-facebook"></i></a></li>
                                     <li><a href="{{ url('#') }}"><i class="la la-twitter"></i></a></li>
@@ -158,7 +162,7 @@
                             </div>
                         </div>
                         <div class="info-box">
-                            <h4 class="name"><a href="{{url('team')}}">Roban Kosata</a></h4>
+                            <h4 class="name"><a href="{{ url('team') }}">Roban Kosata</a></h4>
                             <span class="designation">Computer Hardwere Enginer</span>
                         </div>
                     </div>
@@ -170,7 +174,7 @@
                         <div class="image-box">
                             <figure class="image"><img src="assets/images/resource/team-2.jpg" alt=""></figure>
                             <div class="overlay-box">
-                                <a href="{{url('team')}}" class="icon"><span class="la la-phone"></span></a>
+                                <a href="{{ url('team') }}" class="icon"><span class="la la-phone"></span></a>
                                 <ul class="social-links">
                                     <li><a href="{{ url('#') }}"><i class="la la-facebook"></i></a></li>
                                     <li><a href="{{ url('#') }}"><i class="la la-twitter"></i></a></li>
@@ -181,7 +185,7 @@
                             </div>
                         </div>
                         <div class="info-box">
-                            <h4 class="name"><a href="{{url('team')}}">Moneib Rabora</a></h4>
+                            <h4 class="name"><a href="{{ url('team') }}">Moneib Rabora</a></h4>
                             <span class="designation">Mobile Phone Hardwere Enginer</span>
                         </div>
                     </div>
@@ -193,7 +197,7 @@
                         <div class="image-box">
                             <figure class="image"><img src="assets/images/resource/team-3.jpg" alt=""></figure>
                             <div class="overlay-box">
-                                <a href="{{url('team')}}" class="icon"><span class="la la-phone"></span></a>
+                                <a href="{{ url('team') }}" class="icon"><span class="la la-phone"></span></a>
                                 <ul class="social-links">
                                     <li><a href="{{ url('#') }}"><i class="la la-facebook"></i></a></li>
                                     <li><a href="{{ url('#') }}"><i class="la la-twitter"></i></a></li>
@@ -204,7 +208,7 @@
                             </div>
                         </div>
                         <div class="info-box">
-                            <h4 class="name"><a href="{{url('team')}}">Kartian Monaja</a></h4>
+                            <h4 class="name"><a href="{{ url('team') }}">Kartian Monaja</a></h4>
                             <span class="designation">Computer Hardwere Enginer</span>
                         </div>
                     </div>

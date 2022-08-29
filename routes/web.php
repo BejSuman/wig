@@ -20,7 +20,7 @@ use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\ShoppingCartController;
 use App\Http\Controllers\CheckoutController;
 
-use App\Http\Controllers\ContactUsController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 
@@ -47,7 +47,8 @@ Route::get('/product-detail',[ProductsController::class,'productDetail']);
 Route::get('/shopping-cart',[ShoppingCartController::class,'index']);
 Route::get('/checkout',[CheckoutController::class,'index']);
 
-Route::get('/contact-us',[ContactUsController::class,'index']);
+Route::get('/contact-us',[ContactController::class,'index']);
+Route::post('/contact-form-submit', [ContactController::class, 'submitContactForm']);
 Route::get('/login',[LoginController::class,'index']);
 Route::get('/register',[RegisterController::class,'index']);
 
