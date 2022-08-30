@@ -42,12 +42,17 @@
                                 <h2 class="widget-title">Our Services</h2>
                                 <div class="widget-content">
                                     <ul class="list">
-                                        <li><a href="service">Smart Phone Repair</a></li>
+                                        {{-- <li><a href="service">Smart Phone Repair</a></li>
                                         <li><a href="service">Desktop & Laptop</a></li>
                                         <li><a href="service">Tablets & iPad Repair</a></li>
                                         <li><a href="service">Desktop & Laptop</a></li>
                                         <li><a href="service">LCD & LED TV Repair</a></li>
-                                        <li><a href="service">MP3 & MP4 Player</a></li>
+                                        <li><a href="service">MP3 & MP4 Player</a></li> --}}
+                                        @if ($products)
+                                            @foreach ($products as $id => $product)
+                                                <li><a href="{{ url('products-detail/' . $id) }}">{{ $product }}</a></li>
+                                            @endforeach
+                                        @endif
                                     </ul>
                                 </div>
                             </div>

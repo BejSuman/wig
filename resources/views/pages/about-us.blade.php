@@ -92,7 +92,7 @@
             </div>
 
             <!--Image Column-->
-            <div class="image-column wow fadeIn" style="background-image:url(assets/images/resource/wiggirl1.jpg);">
+            <div class="image-column wow fadeIn" style="background-image:url(assets/images/my-images/about-page/man-wig.jpg);">
                 <figure class="image-box"><img src="assets/images/resource/image-1.jpg" alt=""></figure>
             </div>
         </div>

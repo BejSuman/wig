@@ -18,12 +18,12 @@
                         data-hideslideonmobile="off" data-index="rs-1689" data-masterspeed="default" data-param1=""
                         data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6=""
                         data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off"
-                        data-slotamount="default" data-thumb="assets/images/my-images/main-slider/slide-2.jpg"
+                        data-slotamount="default" data-thumb="assets/images/my-images/main-slider/slide-1.jpg"
                         data-title="Slide Title" data-transition="parallaxvertical">
 
                         <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10"
                             data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina=""
-                            src="assets/images/my-images/main-slider/slide-2.jpg">
+                            src="assets/images/my-images/main-slider/slide-1.jpg">
 
                         {{-- <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                             data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on"
@@ -42,7 +42,7 @@
                             data-voffset="['40','40','40','20']" data-x="['right','right','left','left']"
                             data-y="['middle','middle','middle','middle']"
                             data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                            <h2 style="color: black;font-size: 50px" >
+                            <h2 style="color: white;font-size: 50px">
                                 Front Lace, Full Lace<br>
                                 & Hand Making Style.
                             </h2>
@@ -69,12 +69,12 @@
                         data-hideslideonmobile="off" data-index="rs-1688" data-masterspeed="default" data-param1=""
                         data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6=""
                         data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off"
-                        data-slotamount="default" data-thumb="assets/images/my-images/main-slider/slide-1.jpg"
+                        data-slotamount="default" data-thumb="assets/images/my-images/main-slider/slide-2.jpg"
                         data-title="Slide Title" data-transition="parallaxvertical">
 
                         <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10"
                             data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina=""
-                            src="assets/images/my-images/main-slider/slide-1.jpg">
+                            src="assets/images/my-images/main-slider/slide-2.jpg">
 
                         {{-- <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                             data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on"
@@ -120,46 +120,6 @@
     </section>
     <!--End Main Slider-->
 
-    {{-- <!-- About Us -->
-    <section class="about-us">
-        <div class="auto-container">
-            <div class="row clearfix">
-                <!-- Content Column -->
-                <div class="content-column col-lg-6 col-md-12 col-sm-12">
-                    <div class="inner-column">
-                        <div class="sec-title">
-                            <h2>About Us</h2>
-                        </div>
-                        <div class="text">Our commitment to bring professionalism, good service & trust to the
-                            Phone repair service & maintenance business. We take immense pride in sending some of
-                            the most of professional technicians to yours phone to fix things that aren't workings.
-                        </div>
-
-                        <div class="message">Save time, Save money, With Quality Phone <br> Repair Service,
-                            <span>Purchase - RepairPlus</span></div>
-
-                        <div class="link-box">
-                            <a href="{{url('about-us')}}" class="theme-btn btn-style-two">Contact Us</a>
-                            <a href="{{url('#')}}" class="theme-btn call-btn"><i class="icon la la-phone"></i> + 62
-                                867 6872</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Video Column -->
-                <div class="video-column col-lg-6 col-md-12 col-sm-12 wow fadeIn">
-                    <div class="inner-column">
-                        <div class="float-text">I am a Computer and Mobile Expart</div>
-                        <figure class="image"><img src="assets/images/resource/image-2.jpg" alt=""></figure>
-                        <div class="link-box"><a href="https://www.youtube.com/watch?v=e_WOEL6F1YE"
-                                class="link" data-fancybox="gallery" data-caption=""><span
-                                    class="icon la la-play"></span></a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End About Us --> --}}
 
     <!-- Services Section -->
     <section class="services-section-two">
