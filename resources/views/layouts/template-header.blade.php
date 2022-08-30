@@ -94,13 +94,13 @@
                                                 @endif
                                             </ul>
                                         </li>
-
-                                        <li class="dropdown"><a href="{{ url('#') }}">Products</a>
+                                        <li><a href="{{ url('products') }}">Products</a></li>
+                                        {{-- <li class="dropdown"><a href="{{ url('#') }}">Products</a>
                                             <ul>
                                                 <li><a href="{{ url('products') }}">Products</a></li>
                                                 <li><a href="{{ url('products-detail') }}">Product Details</a></li>
                                             </ul>
-                                        </li>
+                                        </li> --}}
                                         {{-- <li class="dropdown"><a href="{{ url('#') }}">Services</a>
                                             <ul>
                                                 <li><a href="{{ url('services') }}">Services</a></li>
@@ -210,12 +210,13 @@
                                             @endif
                                         </ul>
                                     </li>
-                                    <li class="dropdown"><a href="{{ url('#') }}">Products</a>
+                                    <li><a href="{{ url('products') }}">Products</a></li>
+                                    {{-- <li class="dropdown"><a href="{{ url('#') }}">Products</a>
                                         <ul>
                                             <li><a href="{{ url('products') }}">Products</a></li>
                                             <li><a href="{{ url('products-detail') }}">Product Details</a></li>
                                         </ul>
-                                    </li>
+                                    </li> --}}
                                     <li><a href="{{ url('gallery') }}">Gallery</a></li>
                                     <li class="dropdown"><a href="{{ url('#') }}">shop</a>
                                         <ul>

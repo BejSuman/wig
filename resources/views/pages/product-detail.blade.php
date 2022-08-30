@@ -14,9 +14,9 @@
                         <div class="basic-details">
                             <div class="row clearfix">
                                 <div class="image-column col-lg-5 col-md-12 col-sm-12 wow fadeIn">
-                                    <figure class="image-box"><a href="assets/images/resource/products/product-single.jpg"
+                                    <figure class="image-box"><a href="{{ URL::asset(checkAndRenderImage($serviceDetails->banner_image, 'assets/images/resource/service-2.jpg')) }}"
                                             class="lightbox-image" title="Image Caption Here"><img
-                                                src="assets/images/resource/products/product-single.jpg" alt=""></a>
+                                                src="{{ URL::asset(checkAndRenderImage($serviceDetails->banner_image, 'assets/images/resource/service-2.jpg')) }}" alt=""></a>
                                     </figure>
                                 </div>
                                 <div class="info-column col-lg-7 col-md-12 col-sm-12">
@@ -31,11 +31,7 @@
                                             </div>
                                             <span class="review">( 3 Customer Reviews )</span>
                                         </div>
-                                        <div class="text">Leverage agile frameworks to provide a robust synopsis for
-                                            high level overviews. Iterative approaches to corporate strategy foster
-                                            collaborative thinking to further the overall value proposition.
-                                            Organically grow the holistic world view of disruptive innovation via
-                                            workplace diversity and empowerment.</div>
+                                        <div class="text">{!!html_entity_decode($serviceDetails->description)!!}</div>
                                         <div class="clearfix">
                                             <div class="item-quantity"><input class="quantity-spinner" type="text"
                                                     value="2" name="quantity"></div>
@@ -87,7 +83,7 @@
                                             <!--Reviews-->
                                             <article class="review-box clearfix">
                                                 <figure class="rev-thumb"><img
-                                                        src="assets/images/resource/review-thumb-1.jpg" alt="">
+                                                        src="{{url('assets/images/resource/review-thumb-1.jpg')}}" alt="">
                                                 </figure>
                                                 <div class="rev-content">
                                                     <div class="rev-info"><span>James Koster</span> June 7, 2013
@@ -106,7 +102,7 @@
                                             <!--Reviews-->
                                             <article class="review-box reply clearfix">
                                                 <figure class="rev-thumb"><img
-                                                        src="assets/images/resource/review-thumb-2.jpg" alt="">
+                                                        src="{{url('assets/images/resource/review-thumb-2.jpg')}}" alt="">
                                                 </figure>
                                                 <div class="rev-content">
                                                     <div class="rev-info"><span>Cobus Besten</span> June 7, 2013
@@ -123,7 +119,7 @@
                                             <!--Reviews-->
                                             <article class="review-box clearfix">
                                                 <figure class="rev-thumb"><img
-                                                        src="assets/images/resource/review-thumb-3.jpg" alt="">
+                                                        src="{{url('assets/images/resource/review-thumb-3.jpg')}}" alt="">
                                                 </figure>
                                                 <div class="rev-content">
                                                     <div class="rev-info"><span>Magnus</span> June 7, 2013</div>
@@ -242,7 +238,7 @@
                                 <!-- Related Post -->
                                 <div class="post">
                                     <figure class="post-thumb"><a href="shop-detail"><img
-                                                src="assets/images/resource/products/thumb-1.jpg" alt=""></a>
+                                                src="{{url('assets/images/resource/products/thumb-1.jpg')}}" alt=""></a>
                                     </figure>
                                     <h4><a href="shop-detail">Woo Album #4</a></h4>
                                     <div class="rating"><span class="la la-star"></span><span
@@ -254,7 +250,7 @@
                                 <!-- Related Post -->
                                 <div class="post">
                                     <figure class="post-thumb"><a href="shop-detail"><img
-                                                src="assets/images/resource/products/thumb-2.jpg" alt=""></a>
+                                                src="{{url('assets/images/resource/products/thumb-2.jpg')}}" alt=""></a>
                                     </figure>
                                     <h4><a href="shop-detail">Happy Ninja</a></h4>
                                     <div class="rating"><span class="la la-star"></span><span
@@ -266,7 +262,7 @@
                                 <!-- Related Post -->
                                 <div class="post">
                                     <figure class="post-thumb"><a href="shop-detail"><img
-                                                src="assets/images/resource/products/thumb-3.jpg" alt=""></a>
+                                                src="{{url('assets/images/resource/products/thumb-3.jpg')}}" alt=""></a>
                                     </figure>
                                     <h4><a href="shop-detail">Ninja Silhouette</a></h4>
                                     <div class="rating"><span class="la la-star"></span><span

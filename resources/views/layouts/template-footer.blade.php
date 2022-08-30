@@ -126,7 +126,7 @@
     <div class="footer-bottom" style="border-top: 2px solid black">
         <div class="auto-container">
             <div class="inner-container clearfix">
-                <div class="footer-nav">
+                {{-- <div class="footer-nav">
                     <ul class="clearfix">
                         <li><a href="{{url('/')}}">Home</a></li>
                         <li><a href="{{url('about-us')}}">About Us</a></li>
@@ -135,10 +135,10 @@
                         <li><a href="{{url('blog')}}">Blog</a></li>
                         <li><a href="{{url('contact-us')}}">Contact</a></li>
                     </ul>
-                </div>
+                </div> --}}
 
                 <div class="copyright-text">
-                    <p>Copyright © <a href="{{url('/')}}">Adjust for</a> 2018. All rights reserved</p>
+                    <p class="">Copyright © <a href="{{url('/')}}">Adjust for</a> 2018. All rights reserved</p>
                 </div>
             </div>
         </div>

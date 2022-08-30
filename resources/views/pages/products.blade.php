@@ -24,8 +24,39 @@
                     </div>
 
                     <div class="row clearfix">
+                        {{--  --}}
+                        @if ($services)
+                            @foreach ($services as $key => $service)
+                                <div class="shop-item col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+                                    <div class="inner-box">
+                                        <div class="image">
+                                            <img src="{{ URL::asset(checkAndRenderImage($service['display_image'], 'assets/images/resource/service-2.jpg')) }}" alt="">
+                                            <div class="overlay-box">
+                                                <div class="icon-box">
+                                                    <a href="{{ url('shopping-cart') }}"><i class="la la-heart-o"></i></a>
+                                                    <a href="{{ url('shopping-cart') }}"><i
+                                                            class="la la-shopping-cart"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="lower-content">
+                                            <h3>
+                                                {{-- <a href="{{ url('product-detail') }}">Flying Ninja</a> --}}
+                                                <a href={{ url('products-detail/' . $service['id']) }}>{{ $service['title'] }}</a>
+                                            </h3>
+                                            <span class="price">$12.00</span>
+                                            <p>
+                                                {!! html_entity_decode($service['small_description']) !!}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endforeach
+                        @endif
+
+                        {{--  --}}
                         <!-- Shop item -->
-                        <div class="shop-item col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+                        {{-- <div class="shop-item col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                             <div class="inner-box">
                                 <div class="image">
                                     <img src="assets/images/resource/products/1.jpg" alt="">
@@ -41,159 +72,159 @@
                                     <span class="price">$12.00</span>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
 
                         <!-- Shop item -->
-                        <div class="shop-item col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
+                        {{-- <div class="shop-item col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
                             <div class="inner-box">
                                 <div class="image">
                                     <img src="assets/images/resource/products/2.jpg" alt="">
                                     <div class="overlay-box">
                                         <div class="icon-box">
-                                            <a href="{{url('shopping-cart')}}"><i class="la la-heart-o"></i></a>
-                                            <a href="{{url('shopping-cart')}}"><i class="la la-shopping-cart"></i></a>
+                                            <a href="{{ url('shopping-cart') }}"><i class="la la-heart-o"></i></a>
+                                            <a href="{{ url('shopping-cart') }}"><i class="la la-shopping-cart"></i></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="lower-content">
-                                    <h3><a href="{{url('product-detail')}}">Happy Ninja</a></h3>
+                                    <h3><a href="{{ url('product-detail') }}">Happy Ninja</a></h3>
                                     <span class="price">$18.00</span>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
 
                         <!-- Shop item -->
-                        <div class="shop-item col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="800ms">
+                        {{-- <div class="shop-item col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="800ms">
                             <div class="inner-box">
                                 <div class="image">
                                     <img src="assets/images/resource/products/3.jpg" alt="">
                                     <div class="overlay-box">
                                         <div class="icon-box">
-                                            <a href="{{url('shopping-cart')}}"><i class="la la-heart-o"></i></a>
-                                            <a href="{{url('shopping-cart')}}"><i class="la la-shopping-cart"></i></a>
+                                            <a href="{{ url('shopping-cart') }}"><i class="la la-heart-o"></i></a>
+                                            <a href="{{ url('shopping-cart') }}"><i class="la la-shopping-cart"></i></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="lower-content">
-                                    <h3><a href="{{url('product-detail')}}">Patient Ninja</a></h3>
+                                    <h3><a href="{{ url('product-detail') }}">Patient Ninja</a></h3>
                                     <span class="price">$35.00</span>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
 
                         <!-- Shop item -->
-                        <div class="shop-item col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+                        {{-- <div class="shop-item col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                             <div class="inner-box">
                                 <div class="image">
                                     <img src="assets/images/resource/products/4.jpg" alt="">
                                     <div class="overlay-box">
                                         <div class="icon-box">
-                                            <a href="{{url('shopping-cart')}}"><i class="la la-heart-o"></i></a>
-                                            <a href="{{url('shopping-cart')}}"><i class="la la-shopping-cart"></i></a>
+                                            <a href="{{ url('shopping-cart') }}"><i class="la la-heart-o"></i></a>
+                                            <a href="{{ url('shopping-cart') }}"><i class="la la-shopping-cart"></i></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="lower-content">
-                                    <h3><a href="{{url('product-detail')}}">Ninja Silhouette</a></h3>
+                                    <h3><a href="{{ url('product-detail') }}">Ninja Silhouette</a></h3>
                                     <span class="price">$20.00</span>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
 
                         <!-- Shop item -->
-                        <div class="shop-item col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
+                        {{-- <div class="shop-item col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
                             <div class="inner-box">
                                 <div class="image">
                                     <img src="assets/images/resource/products/5.jpg" alt="">
                                     <div class="overlay-box">
                                         <div class="icon-box">
-                                            <a href="{{url('shopping-cart')}}"><i class="la la-heart-o"></i></a>
-                                            <a href="{{url('shopping-cart')}}"><i class="la la-shopping-cart"></i></a>
+                                            <a href="{{ url('shopping-cart') }}"><i class="la la-heart-o"></i></a>
+                                            <a href="{{ url('shopping-cart') }}"><i class="la la-shopping-cart"></i></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="lower-content">
-                                    <h3><a href="{{url('product-detail')}}">Premium Quality</a></h3>
+                                    <h3><a href="{{ url('product-detail') }}">Premium Quality</a></h3>
                                     <span class="price">$35.00</span>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
 
                         <!-- Shop item -->
-                        <div class="shop-item col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="800ms">
+                        {{-- <div class="shop-item col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="800ms">
                             <div class="inner-box">
                                 <div class="image">
                                     <img src="assets/images/resource/products/6.jpg" alt="">
                                     <div class="overlay-box">
                                         <div class="icon-box">
-                                            <a href="{{url('shopping-cart')}}"><i class="la la-heart-o"></i></a>
-                                            <a href="{{url('shopping-cart')}}"><i class="la la-shopping-cart"></i></a>
+                                            <a href="{{ url('shopping-cart') }}"><i class="la la-heart-o"></i></a>
+                                            <a href="{{ url('shopping-cart') }}"><i class="la la-shopping-cart"></i></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="lower-content">
-                                    <h3><a href="{{url('product-detail')}}">Ship Your Idea</a></h3>
+                                    <h3><a href="{{ url('product-detail') }}">Ship Your Idea</a></h3>
                                     <span class="price"><del>$15.00</del> $12.00</span>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
 
                         <!-- Shop item -->
-                        <div class="shop-item col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+                        {{-- <div class="shop-item col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                             <div class="inner-box">
                                 <div class="image">
                                     <img src="assets/images/resource/products/7.jpg" alt="">
                                     <div class="overlay-box">
                                         <div class="icon-box">
-                                            <a href="{{url('shopping-cart')}}"><i class="la la-heart-o"></i></a>
-                                            <a href="{{url('shopping-cart')}}"><i class="la la-shopping-cart"></i></a>
+                                            <a href="{{ url('shopping-cart') }}"><i class="la la-heart-o"></i></a>
+                                            <a href="{{ url('shopping-cart') }}"><i class="la la-shopping-cart"></i></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="lower-content">
-                                    <h3><a href="{{url('product-detail')}}">Ninja Silhouette</a></h3>
+                                    <h3><a href="{{ url('product-detail') }}">Ninja Silhouette</a></h3>
                                     <span class="price">$20.00</span>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
 
                         <!-- Shop item -->
-                        <div class="shop-item col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
+                        {{-- <div class="shop-item col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
                             <div class="inner-box">
                                 <div class="image">
                                     <img src="assets/images/resource/products/8.jpg" alt="">
                                     <div class="overlay-box">
                                         <div class="icon-box">
-                                            <a href="{{url('shopping-cart')}}"><i class="la la-heart-o"></i></a>
-                                            <a href="{{url('shopping-cart')}}"><i class="la la-shopping-cart"></i></a>
+                                            <a href="{{ url('shopping-cart') }}"><i class="la la-heart-o"></i></a>
+                                            <a href="{{ url('shopping-cart') }}"><i class="la la-shopping-cart"></i></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="lower-content">
-                                    <h3><a href="{{url('product-detail')}}">Premium Quality</a></h3>
+                                    <h3><a href="{{ url('product-detail') }}">Premium Quality</a></h3>
                                     <span class="price">$35.00</span>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
 
                         <!-- Shop item -->
-                        <div class="shop-item col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="800ms">
+                        {{-- <div class="shop-item col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="800ms">
                             <div class="inner-box">
                                 <div class="image">
                                     <img src="assets/images/resource/products/9.jpg" alt="">
                                     <div class="overlay-box">
                                         <div class="icon-box">
-                                            <a href="{{url('shopping-cart')}}"><i class="la la-heart-o"></i></a>
-                                            <a href="{{url('shopping-cart')}}"><i class="la la-shopping-cart"></i></a>
+                                            <a href="{{ url('shopping-cart') }}"><i class="la la-heart-o"></i></a>
+                                            <a href="{{ url('shopping-cart') }}"><i class="la la-shopping-cart"></i></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="lower-content">
-                                    <h3><a href="{{url('product-detail')}}">Ship Your Idea</a></h3>
+                                    <h3><a href="{{ url('product-detail') }}">Ship Your Idea</a></h3>
                                     <span class="price"><del>$15.00</del> $12.00</span>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
 
                     <!-- Styled Pagination -->

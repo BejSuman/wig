@@ -4,7 +4,7 @@ use Illuminate\Http\Request;
 namespace App\Http\Controllers;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\View;
-
+use App\Models\Products;
 class HomeController extends Controller
 {
     public function __construct()
@@ -14,6 +14,7 @@ class HomeController extends Controller
     }
     public function index()
     {
-        return view('pages.home');
+        $services = Products::all()->toArray();
+        return view('pages.home',compact('services'));
     }
 }
