@@ -15,11 +15,11 @@ class ProductsController extends Controller
     }
     public function index()
     {
-        $services = Products::all()->toArray();
-        return view('pages.products', compact('services'));
+        $allProducts = Products::all()->toArray();
+        return view('pages.products', compact('allProducts'));
     }
     public function productDetail($id, Request $request){
-        $serviceDetails = Products::where('id', $id)->first();
-        return view('pages.product-detail', compact('serviceDetails'));
+        $productDetails = Products::where('id', $id)->first();
+        return view('pages.product-detail', compact('productDetails'));
     }
 }

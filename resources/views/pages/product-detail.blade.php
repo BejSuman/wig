@@ -14,9 +14,9 @@
                         <div class="basic-details">
                             <div class="row clearfix">
                                 <div class="image-column col-lg-5 col-md-12 col-sm-12 wow fadeIn">
-                                    <figure class="image-box"><a href="{{ URL::asset(checkAndRenderImage($serviceDetails->banner_image, 'assets/images/resource/service-2.jpg')) }}"
+                                    <figure class="image-box"><a href="{{ URL::asset(checkAndRenderImage($productDetails->banner_image, 'assets/images/resource/service-2.jpg')) }}"
                                             class="lightbox-image" title="Image Caption Here"><img
-                                                src="{{ URL::asset(checkAndRenderImage($serviceDetails->banner_image, 'assets/images/resource/service-2.jpg')) }}" alt=""></a>
+                                                src="{{ URL::asset(checkAndRenderImage($productDetails->banner_image, 'assets/images/resource/service-2.jpg')) }}" alt=""></a>
                                     </figure>
                                 </div>
                                 <div class="info-column col-lg-7 col-md-12 col-sm-12">
@@ -31,7 +31,7 @@
                                             </div>
                                             <span class="review">( 3 Customer Reviews )</span>
                                         </div>
-                                        <div class="text">{!!html_entity_decode($serviceDetails->description)!!}</div>
+                                        <div class="text">{!!html_entity_decode($productDetails->description)!!}</div>
                                         <div class="clearfix">
                                             <div class="item-quantity"><input class="quantity-spinner" type="text"
                                                     value="2" name="quantity"></div>

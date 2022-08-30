@@ -14,7 +14,7 @@ class HomeController extends Controller
     }
     public function index()
     {
-        $services = Products::all()->toArray();
-        return view('pages.home',compact('services'));
+        $allProducts = Products::all()->toArray();
+        return view('pages.home',compact('allProducts'));
     }
 }

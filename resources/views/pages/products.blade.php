@@ -25,12 +25,12 @@
 
                     <div class="row clearfix">
                         {{--  --}}
-                        @if ($services)
-                            @foreach ($services as $key => $service)
+                        @if ($allProducts)
+                            @foreach ($allProducts as $key => $product)
                                 <div class="shop-item col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                                     <div class="inner-box">
                                         <div class="image">
-                                            <img src="{{ URL::asset(checkAndRenderImage($service['display_image'], 'assets/images/resource/service-2.jpg')) }}" alt="">
+                                            <img src="{{ URL::asset(checkAndRenderImage($product['display_image'], 'assets/images/resource/service-2.jpg')) }}" alt="">
                                             <div class="overlay-box">
                                                 <div class="icon-box">
                                                     <a href="{{ url('shopping-cart') }}"><i class="la la-heart-o"></i></a>
@@ -42,11 +42,11 @@
                                         <div class="lower-content">
                                             <h3>
                                                 {{-- <a href="{{ url('product-detail') }}">Flying Ninja</a> --}}
-                                                <a href={{ url('products-detail/' . $service['id']) }}>{{ $service['title'] }}</a>
+                                                <a href={{ url('products-detail/' . $product['id']) }}>{{ $product['title'] }}</a>
                                             </h3>
                                             <span class="price">$12.00</span>
                                             <p>
-                                                {!! html_entity_decode($service['small_description']) !!}
+                                                {!! html_entity_decode($product['small_description']) !!}
                                             </p>
                                         </div>
                                     </div>
@@ -259,11 +259,11 @@
                                 <h2>Categories</h2>
                             </div>
                             <ul class="category-list">
-                                <li><a href="{{ url('#') }}">Tablet Repair <span>12</span></a></li>
-                                <li><a href="{{ url('#') }}">Pc & Mac Repair <span>15</span></a></li>
-                                <li><a href="{{ url('#') }}">Laptop Repair <span>10</span></a></li>
-                                <li><a href="{{ url('#') }}">Game Console Repair <span>08</span></a></li>
-                                <li><a href="{{ url('#') }}">Phone Repair <span>05</span></a></li>
+                                <li><a href="{{ url('#') }}">Anti-Slip Wigs <span>12</span></a></li>
+                                <li><a href="{{ url('#') }}">Full Lace Wigs <span>15</span></a></li>
+                                <li><a href="{{ url('#') }}">Lace Front Wigs <span>10</span></a></li>
+                                {{-- <li><a href="{{ url('#') }}">Game Console Repair <span>08</span></a></li>
+                                <li><a href="{{ url('#') }}">Phone Repair <span>05</span></a></li> --}}
                             </ul>
                         </div>
 

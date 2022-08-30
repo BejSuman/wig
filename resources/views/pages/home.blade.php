@@ -129,23 +129,23 @@
                 </div>
 
                 <div class="services-carousel owl-carousel owl-theme">
-                    @if ($services)
-                        @foreach ($services as $key => $service)
+                    @if ($allProducts)
+                        @foreach ($allProducts as $key => $product)
                             <!-- Service Block -->
                             <div class="service-block-two">
                                 <div class="inner-box">
                                     <div class="image-box">
                                         <figure class="image"><img
-                                                src="{{ URL::asset(checkAndRenderImage($service['display_image'], 'assets/images/resource/service-2.jpg')) }}"
+                                                src="{{ URL::asset(checkAndRenderImage($product['display_image'], 'assets/images/resource/service-2.jpg')) }}"
                                                 alt="">
                                         </figure>
-                                        <div class="overlay-box"><a href="{{ url('products-detail/' . $service['id']) }}"
+                                        <div class="overlay-box"><a href="{{ url('products-detail/' . $product['id']) }}"
                                                 class="read-more">Read More...</a></div>
                                     </div>
                                     <div class="lower-content">
-                                        <h4><a href={{ url('products-detail/' . $service['id']) }}>{{ $service['title'] }}</a>
+                                        <h4><a href={{ url('products-detail/' . $product['id']) }}>{{ $product['title'] }}</a>
                                         </h4>
-                                        <div class="text">{!! html_entity_decode($service['small_description']) !!}</div>
+                                        <div class="text">{!! html_entity_decode($product['small_description']) !!}</div>
                                     </div>
                                 </div>
                             </div>
