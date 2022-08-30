@@ -56,7 +56,7 @@
                             data-y="['middle','middle','middle','middle']"
                             data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
                             <div class="btn-box">
-                                <a href="{{url('products')}}" class="theme-btn btn-style-one"><span>Shop
+                                <a href="{{ url('products') }}" class="theme-btn btn-style-one"><span>Shop
                                         Now</span></a>
                                 <a href="content" class="theme-btn btn-style-two"><span>Contact us</span></a>
                             </div>
@@ -93,7 +93,7 @@
                             data-voffset="['40','40','40','20']" data-x="['left','left','left','left']"
                             data-y="['middle','middle','middle','middle']"
                             data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                            <h2 style="color: white;font-size: 50px" >
+                            <h2 style="color: white;font-size: 50px">
                                 Perfect and Modern Hair Wigs...
                             </h2>
                         </div>
@@ -106,7 +106,7 @@
                             data-y="['middle','middle','middle','middle']"
                             data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
                             <div class="btn-box">
-                                <a href="{{url('products')}}" class="theme-btn btn-style-one"><span>Shop
+                                <a href="{{ url('products') }}" class="theme-btn btn-style-one"><span>Shop
                                         Now</span></a>
                                 <a href="content" class="theme-btn btn-style-two"><span>Contact us</span></a>
                             </div>
@@ -372,7 +372,7 @@
 
             <!-- Button Box -->
             <div class="btn-box">
-                <a href="{{url('services')}}" class="theme-btn btn-style-one">View All</a>
+                <a href="{{ url('services') }}" class="theme-btn btn-style-one">View All</a>
             </div>
         </div>
     </section>
@@ -392,7 +392,7 @@
                         <div class="image-box">
                             <figure class="image"><img src="assets/images/resource/team-1.jpg" alt=""></figure>
                             <div class="overlay-box">
-                                <a href="{{url('team')}}" class="icon"><span class="la la-phone"></span></a>
+                                <a href="{{ url('team') }}" class="icon"><span class="la la-phone"></span></a>
                                 <ul class="social-links">
                                     <li><a href="{{ url('#') }}"><i class="la la-facebook"></i></a></li>
                                     <li><a href="{{ url('#') }}"><i class="la la-twitter"></i></a></li>
@@ -403,7 +403,7 @@
                             </div>
                         </div>
                         <div class="info-box">
-                            <h4 class="name"><a href="{{url('team')}}">Roban Kosata</a></h4>
+                            <h4 class="name"><a href="{{ url('team') }}">Roban Kosata</a></h4>
                             <span class="designation">Computer Hardwere Enginer</span>
                         </div>
                     </div>
@@ -415,7 +415,7 @@
                         <div class="image-box">
                             <figure class="image"><img src="assets/images/resource/team-2.jpg" alt=""></figure>
                             <div class="overlay-box">
-                                <a href="{{url('team')}}" class="icon"><span class="la la-phone"></span></a>
+                                <a href="{{ url('team') }}" class="icon"><span class="la la-phone"></span></a>
                                 <ul class="social-links">
                                     <li><a href="{{ url('#') }}"><i class="la la-facebook"></i></a></li>
                                     <li><a href="{{ url('#') }}"><i class="la la-twitter"></i></a></li>
@@ -426,7 +426,7 @@
                             </div>
                         </div>
                         <div class="info-box">
-                            <h4 class="name"><a href="{{url('team')}}">Moneib Rabora</a></h4>
+                            <h4 class="name"><a href="{{ url('team') }}">Moneib Rabora</a></h4>
                             <span class="designation">Mobile Phone Hardwere Enginer</span>
                         </div>
                     </div>
@@ -438,7 +438,7 @@
                         <div class="image-box">
                             <figure class="image"><img src="assets/images/resource/team-3.jpg" alt=""></figure>
                             <div class="overlay-box">
-                                <a href="{{url('team')}}" class="icon"><span class="la la-phone"></span></a>
+                                <a href="{{ url('team') }}" class="icon"><span class="la la-phone"></span></a>
                                 <ul class="social-links">
                                     <li><a href="{{ url('#') }}"><i class="la la-facebook"></i></a></li>
                                     <li><a href="{{ url('#') }}"><i class="la la-twitter"></i></a></li>
@@ -449,7 +449,7 @@
                             </div>
                         </div>
                         <div class="info-box">
-                            <h4 class="name"><a href="{{url('team')}}">Kartian Monaja</a></h4>
+                            <h4 class="name"><a href="{{ url('team') }}">Kartian Monaja</a></h4>
                             <span class="designation">Computer Hardwere Enginer</span>
                         </div>
                     </div>
@@ -464,7 +464,7 @@
         <div class="auto-container">
             <div class="sec-title clearfix">
                 <h2>Latest News</h2>
-                <div class="read-more"><a href="{{url('blog')}}">View All</a></div>
+                <div class="read-more"><a href="{{ url('blog') }}">View All</a></div>
             </div>
             <div class="row">
                 <!-- News Block -->
@@ -472,17 +472,18 @@
                     <div class="inner-box">
                         <div class="image-box">
                             <figure class="image"><img src="assets/images/resource/news-1.jpg" alt=""></figure>
-                            <div class="overlay-box"><a href="{{url('blog-detail')}}" class="icon"><i class="la la-link"></i></a>
+                            <div class="overlay-box"><a href="{{ url('blog-detail') }}" class="icon"><i
+                                        class="la la-link"></i></a>
                             </div>
                         </div>
 
                         <div class="lower-content">
                             <ul class="info">
-                                <li><a href="{{url('blog-detail')}}"><i class="la la-user"></i> Admin</a></li>
-                                <li><a href="{{url('blog-detail')}}"><i class="la la-calendar"></i> February 17,
+                                <li><a href="{{ url('blog-detail') }}"><i class="la la-user"></i> Admin</a></li>
+                                <li><a href="{{ url('blog-detail') }}"><i class="la la-calendar"></i> February 17,
                                         2017</a></li>
                             </ul>
-                            <h4><a href="{{url('blog-detail')}}">iPad Repairs For Schools / Universities Across The
+                            <h4><a href="{{ url('blog-detail') }}">iPad Repairs For Schools / Universities Across The
                                     Usa</a></h4>
                         </div>
                     </div>
@@ -493,17 +494,18 @@
                     <div class="inner-box">
                         <div class="image-box">
                             <figure class="image"><img src="assets/images/resource/news-2.jpg" alt=""></figure>
-                            <div class="overlay-box"><a href="{{url('blog-detail')}}" class="icon"><i class="la la-link"></i></a>
+                            <div class="overlay-box"><a href="{{ url('blog-detail') }}" class="icon"><i
+                                        class="la la-link"></i></a>
                             </div>
                         </div>
 
                         <div class="lower-content">
                             <ul class="info">
-                                <li><a href="{{url('blog-detail')}}"><i class="la la-user"></i> Admin</a></li>
-                                <li><a href="{{url('blog-detail')}}"><i class="la la-calendar"></i> February 17,
+                                <li><a href="{{ url('blog-detail') }}"><i class="la la-user"></i> Admin</a></li>
+                                <li><a href="{{ url('blog-detail') }}"><i class="la la-calendar"></i> February 17,
                                         2017</a></li>
                             </ul>
-                            <h4><a href="{{url('blog-detail')}}">We offer the best in same day iPhone Repairs
+                            <h4><a href="{{ url('blog-detail') }}">We offer the best in same day iPhone Repairs
                                     plymouth</a></h4>
                         </div>
                     </div>
@@ -514,17 +516,18 @@
                     <div class="inner-box">
                         <div class="image-box">
                             <figure class="image"><img src="assets/images/resource/news-3.jpg" alt=""></figure>
-                            <div class="overlay-box"><a href="{{url('blog-detail')}}" class="icon"><i class="la la-link"></i></a>
+                            <div class="overlay-box"><a href="{{ url('blog-detail') }}" class="icon"><i
+                                        class="la la-link"></i></a>
                             </div>
                         </div>
 
                         <div class="lower-content">
                             <ul class="info">
-                                <li><a href="{{url('blog-detail')}}"><i class="la la-user"></i> Admin</a></li>
-                                <li><a href="{{url('blog-detail')}}"><i class="la la-calendar"></i> February 17,
+                                <li><a href="{{ url('blog-detail') }}"><i class="la la-user"></i> Admin</a></li>
+                                <li><a href="{{ url('blog-detail') }}"><i class="la la-calendar"></i> February 17,
                                         2017</a></li>
                             </ul>
-                            <h4><a href="{{url('blog-detail')}}">All Software Boxes and Dongles At Best Prices</a></h4>
+                            <h4><a href="{{ url('blog-detail') }}">All Software Boxes and Dongles At Best Prices</a></h4>
                         </div>
                     </div>
                 </div>
@@ -547,7 +550,7 @@
                     <div class="feature-block">
                         <div class="inner-box">
                             <span class="icon la la-wrench"></span>
-                            <h5><a href="{{url('services')}}">Free Diagnostics</a></h5>
+                            <h5><a href="{{ url('services') }}">Free Diagnostics</a></h5>
                             <div class="text">We is a quick and easy way of checking the set up on your Mobile
                                 Phones, Desktop & Laptop, Acessories and ect... We done its free of cost.</div>
                         </div>
@@ -557,7 +560,7 @@
                     <div class="feature-block">
                         <div class="inner-box">
                             <span class="icon la la-cog"></span>
-                            <h5><a href="{{url('services')}}">Quick Repair Process</a></h5>
+                            <h5><a href="{{ url('services') }}">Quick Repair Process</a></h5>
                             <div class="text">WThe repair process is fast and convenient & our expert teams of
                                 Mr.Fixit repair, If you see a phone symbol in the top left corner of the screen.
                             </div>
@@ -568,7 +571,7 @@
                     <div class="feature-block">
                         <div class="inner-box">
                             <span class="icon la la-clock-o"></span>
-                            <h5><a href="{{url('services')}}">24/7 Customer Support</a></h5>
+                            <h5><a href="{{ url('services') }}">24/7 Customer Support</a></h5>
                             <div class="text">24x7 techsupport is one of the best services in the Mr.Fixit. 24x7
                                 tech support providing quality services at anytime, anywhere in the world.</div>
                         </div>
@@ -692,7 +695,7 @@
                         </div>
                         <div class="text"> Service Cost Depends on Your Device Problem Lorem Ipsum Text</div>
                         <div class="btn-box">
-                            <a href="{{url('contact-us')}}" class="theme-btn btn-style-two">Get Started</a>
+                            <a href="{{ url('contact-us') }}" class="theme-btn btn-style-two">Get Started</a>
                         </div>
                     </div>
                 </div>
@@ -708,7 +711,7 @@
                         </div>
                         <div class="text"> Service Cost Depends on Your Device Problem Lorem Ipsum Text</div>
                         <div class="btn-box">
-                            <a href="{{url('contact-us')}}" class="theme-btn btn-style-two">Get Started</a>
+                            <a href="{{ url('contact-us') }}" class="theme-btn btn-style-two">Get Started</a>
                         </div>
                     </div>
                 </div>
@@ -724,7 +727,7 @@
                         </div>
                         <div class="text"> Service Cost Depends on Your Device Problem Lorem Ipsum Text</div>
                         <div class="btn-box">
-                            <a href="{{url('contact-us')}}" class="theme-btn btn-style-two">Get Started</a>
+                            <a href="{{ url('contact-us') }}" class="theme-btn btn-style-two">Get Started</a>
                         </div>
                     </div>
                 </div>
@@ -740,7 +743,7 @@
                         </div>
                         <div class="text"> Service Cost Depends on Your Device Problem Lorem Ipsum Text</div>
                         <div class="btn-box">
-                            <a href="{{url('contact-us')}}" class="theme-btn btn-style-two">Get Started</a>
+                            <a href="{{ url('contact-us') }}" class="theme-btn btn-style-two">Get Started</a>
                         </div>
                     </div>
                 </div>

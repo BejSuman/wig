@@ -46,6 +46,7 @@ Route::get('/blog-detail',[BlogController::class,'blogDetail']);
 
 Route::get('/products',[ProductsController::class,'index']);
 Route::get('/products-detail',[ProductsController::class,'productDetail']);
+Route::get('/products-detail/{id}',[ProductsController::class,'index']);
 Route::get('/shopping-cart',[ShoppingCartController::class,'index']);
 Route::get('/checkout',[CheckoutController::class,'index']);
 
