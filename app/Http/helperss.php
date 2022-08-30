@@ -82,6 +82,7 @@ function checkAndRenderImage($filePath = '', $alt = '') {
         return $alt;
     }
 }
+
 /**
  * unique string
  * @param $l

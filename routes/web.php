@@ -8,9 +8,9 @@ use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\HomeController;
 
 use App\Http\Controllers\AboutUsController;
-use App\Http\Controllers\TeamController;
-use App\Http\Controllers\FaqController;
-use App\Http\Controllers\PricingController;
+// use App\Http\Controllers\TeamController;
+// use App\Http\Controllers\FaqController;
+// use App\Http\Controllers\PricingController;
 
 use App\Http\Controllers\ServicesController;
 use App\Http\Controllers\GalleryController;
@@ -21,8 +21,10 @@ use App\Http\Controllers\ShoppingCartController;
 use App\Http\Controllers\CheckoutController;
 
 use App\Http\Controllers\ContactController;
-use App\Http\Controllers\LoginController;
-use App\Http\Controllers\RegisterController;
+// use App\Http\Controllers\LoginController;
+// use App\Http\Controllers\RegisterController;
+
+use App\Http\Controllers\Admin\ProductsAdminController;
 
 
 
@@ -69,6 +71,11 @@ Route::group(['prefix' => 'admin'], function () {
 
     Route::group(['middleware' => ['adminAfterLogin']], function () {
         Route::get('dashboard', [AdminController::class, 'dashboard'])->name('dashboard');
+
+        Route::model('Products', 'App\Models\Products');
+        Route::resource('products', 'App\Http\Controllers\Admin\ProductsAdminController');
+        Route::post('products/get-list', [ProductsAdminController::class, 'products_list_ajax']);
+        Route::get('products/delete/{id}', [ProductsAdminController::class, 'destroy']);
     });
 
 

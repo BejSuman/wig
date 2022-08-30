@@ -71,21 +71,29 @@
                                 <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
                                     <ul class="navigation clearfix">
                                         <li><a href="{{ url('/') }}">Home</a></li>
-                                        <li class="dropdown"><a href="{{ url('#') }}">About Us</a>
+                                        <li><a href="{{ url('/about-us') }}">About Us</a></li>
+                                        {{-- <li class="dropdown"><a href="{{ url('#') }}">About Us</a>
                                             <ul>
                                                 <li><a href="{{ url('about-us') }}">About Us</a></li>
                                                 <li><a href="{{ url('team') }}">Team</a></li>
                                                 <li><a href="{{ url('faq') }}">FAQ's</a></li>
                                                 <li><a href="{{ url('pricing') }}">Price List</a></li>
                                             </ul>
-                                        </li>
+                                        </li> --}}
                                         <li class="dropdown"><a href="{{ url('#') }}">Wigs</a>
                                             <ul>
                                                 <li><a href="{{ url('blog') }}">Wigs</a></li>
-                                                <li><a href="{{ url('blog-detail') }}">Blog Detail</a></li>
+                                                <li><a href="{{ url('blog') }}">Blog Detail</a></li>
                                             </ul>
                                         </li>
-                                        <li class="dropdown"><a href="{{ url('#') }}">Services</a>
+
+                                        <li class="dropdown"><a href="{{ url('#') }}">Products</a>
+                                            <ul>
+                                                <li><a href="{{ url('products') }}">Products</a></li>
+                                                <li><a href="{{ url('product-detail') }}">Product Details</a></li>
+                                            </ul>
+                                        </li>
+                                        {{-- <li class="dropdown"><a href="{{ url('#') }}">Services</a>
                                             <ul>
                                                 <li><a href="{{ url('services') }}">Services</a></li>
                                                 <li><a href="{{ url('service-detail') }}">Desktop Repair</a></li>
@@ -94,20 +102,20 @@
                                                 <li><a href="{{ url('service-detail') }}">Smart Phone Repair</a></li>
                                                 <li><a href="{{ url('service-detail') }}">Services Detail</a></li>
                                             </ul>
-                                        </li>
+                                        </li> --}}
                                         <li><a href="{{ url('gallery') }}">Gallery</a></li>
 
                                         <li class="dropdown"><a href="{{ url('#') }}">shop</a>
                                             <ul>
-                                                <li><a href="{{ url('products') }}">Our Products</a></li>
-                                                <li><a href="{{ url('product-detail') }}">Product Details</a></li>
+                                                {{-- <li><a href="{{ url('products') }}">Our Products</a></li>
+                                                <li><a href="{{ url('product-detail') }}">Product Details</a></li> --}}
                                                 <li><a href="{{ url('shopping-cart') }}">Shopping Cart</a></li>
                                                 <li><a href="{{ url('checkout') }}">Checkout</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="{{ url('contact-us') }}">Contact Us</a></li>
-                                        <li><a href="{{ url('login') }}">Login</a></li>
-                                        <li><a href="{{ url('register') }}">Register</a></li>
+                                        {{-- <li><a href="{{ url('login') }}">Login</a></li>
+                                        <li><a href="{{ url('register') }}">Register</a></li> --}}
                                     </ul>
                                 </div>
                             </nav>
