@@ -38,13 +38,13 @@
                     <!-- Project item -->
                     <div class="project-item all mix male classic col-xl-3 col-lg-4 col-md-6 col-sm-12">
                         <div class="image-box">
-                            <figure class="image"><img src="assets/images/gallery/gimg2.jpg" alt=""></figure>
+                            <figure class="image"><img src="assets/images/gallery/gim2.jpg" alt=""></figure>
                             <div class="overlay-box">
                                 <div class="content">
                                     <h3><a href="project-detail">Male Type</a></h3>
                                     <div class="category">Catagory : Classic</div>
                                     <a href="project-detail" class="link"><span class="icon la la-link"></span></a>
-                                    <a href="assets/images/gallery/gimg2.jpg" class="link" data-fancybox="gallery"
+                                    <a href="assets/images/gallery/gim2.jpg" class="link" data-fancybox="gallery"
                                         data-caption=""><span class="icon la la-plus"></span></a>
                                 </div>
                             </div>
@@ -70,13 +70,13 @@
                     <!-- Project item -->
                     <div class="project-item all mix male expensive col-xl-3 col-lg-4 col-md-6 col-sm-12">
                         <div class="image-box">
-                            <figure class="image"><img src="assets/images/gallery/gimg4.jpg" alt=""></figure>
+                            <figure class="image"><img src="assets/images/gallery/gim4.jpg" alt=""></figure>
                             <div class="overlay-box">
                                 <div class="content">
                                     <h3><a href="project-detail">Male Type</a></h3>
                                     <div class="category">Catagory : Expensive</div>
                                     <a href="project-detail" class="link"><span class="icon la la-link"></span></a>
-                                    <a href="assets/images/gallery/gimg4.jpg" class="link" data-fancybox="gallery"
+                                    <a href="assets/images/gallery/gim4.jpg" class="link" data-fancybox="gallery"
                                         data-caption=""><span class="icon la la-plus"></span></a>
                                 </div>
                             </div>
@@ -86,13 +86,13 @@
                     <!-- Project item -->
                     <div class="project-item all mix female expensive col-xl-3 col-lg-4 col-md-6 col-sm-12">
                         <div class="image-box">
-                            <figure class="image"><img src="assets/images/gallery/gimg5.jpg" alt=""></figure>
+                            <figure class="image"><img src="assets/images/gallery/gim8.png" alt=""></figure>
                             <div class="overlay-box">
                                 <div class="content">
                                     <h3><a href="project-detail">Female Type</a></h3>
                                     <div class="category">Catagory : Expensive</div>
                                     <a href="project-detail" class="link"><span class="icon la la-link"></span></a>
-                                    <a href="assets/images/gallery/gimg5.jpg" class="link" data-fancybox="gallery"
+                                    <a href="assets/images/gallery/gim8.jpg" class="link" data-fancybox="gallery"
                                         data-caption=""><span class="icon la la-plus"></span></a>
                                 </div>
                             </div>
@@ -119,13 +119,13 @@
                     <div
                         class="project-item all mix female expensive classic col-xl-3 laptop col-lg-4 col-md-6 col-sm-12">
                         <div class="image-box">
-                            <figure class="image"><img src="assets/images/gallery/gimg7.jpg" alt=""></figure>
+                            <figure class="image"><img src="assets/images/gallery/gim11.png" alt=""></figure>
                             <div class="overlay-box">
                                 <div class="content">
                                     <h3><a href="project-detail">Female Type</a></h3>
                                     <div class="category">Catagory : Both(Expensive Classic)</div>
                                     <a href="project-detail" class="link"><span class="icon la la-link"></span></a>
-                                    <a href="assets/images/gallery/gimg7.jpg" class="link" data-fancybox="gallery"
+                                    <a href="assets/images/gallery/gim11.png" class="link" data-fancybox="gallery"
                                         data-caption=""><span class="icon la la-plus"></span></a>
                                 </div>
                             </div>
@@ -135,13 +135,12 @@
                     <!-- Project item -->
                     <div class="project-item all mix male classic col-xl-3 col-lg-4 col-md-6 col-sm-12">
                         <div class="image-box">
-                            <figure class="image"><img src="assets/images/gallery/gimg8.png" alt=""></figure>
-                            <div class="overlay-box">
+                            <figure class="image"><img src="assets/images/gallery/gim5.jpg" alt=""></figure>                            <div class="overlay-box">
                                 <div class="content">
                                     <h3><a href="project-detail">Male Type</a></h3>
                                     <div class="category">Catagory : Classic</div>
                                     <a href="project-detail" class="link"><span class="icon la la-link"></span></a>
-                                    <a href="assets/images/gallery/gimg8.png" class="link" data-fancybox="gallery"
+                                    <a href="assets/images/gallery/gim5.jpg" class="link" data-fancybox="gallery"
                                         data-caption=""><span class="icon la la-plus"></span></a>
                                 </div>
                             </div>
