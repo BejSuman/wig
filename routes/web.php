@@ -21,6 +21,7 @@ use App\Http\Controllers\ShoppingCartController;
 use App\Http\Controllers\CheckoutController;
 
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\Admin\ContactAdminController;
 // use App\Http\Controllers\LoginController;
 // use App\Http\Controllers\RegisterController;
 
@@ -77,6 +78,11 @@ Route::group(['prefix' => 'admin'], function () {
         Route::resource('products', 'App\Http\Controllers\Admin\ProductsAdminController');
         Route::post('products/get-list', [ProductsAdminController::class, 'products_list_ajax']);
         Route::get('products/delete/{id}', [ProductsAdminController::class, 'destroy']);
+
+        Route::model('Contact', 'App\Models\Contact');
+        Route::resource('contact', 'App\Http\Controllers\Admin\ContactAdminController');
+        Route::post('contact/get-list', [ContactAdminController::class, 'contact_list_ajax']);
+        Route::get('contact/delete/{id}', [ContactAdminController::class, 'destroy']);
     });
 
 

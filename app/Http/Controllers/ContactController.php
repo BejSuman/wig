@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\View;
 use Illuminate\Http\Request;
 use App\Models\Contact;
 use Illuminate\Support\Facades\Validator;
+use mysql_xdevapi\Exception;
 
 class ContactController extends Controller
 {
@@ -16,10 +17,12 @@ class ContactController extends Controller
     }
     public function index()
     {
+        // $products = DB::table('products')->pluck('title','id');
         return view('pages.contact-us');
     }
     public function submitContactForm(Request $request)
     {
+        try {
 
         // Please use only validation fields to create validation rules.
         $validate_value['name'] = $request->post('name');
@@ -51,5 +54,9 @@ class ContactController extends Controller
             return redirect()->back();
             // return json_encode(['status' => true, 'msg' => 'Appointment booking successful. We will contact you soon', 'data' => '']);
         }
+    } catch (\Exception $exception) {
+    return json_encode(['status' => false, 'msg' => 'Error while submitting.', 'data' => $exception->getMessage()]);
     }
 }
+}
+
