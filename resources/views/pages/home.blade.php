@@ -4,7 +4,7 @@
 @section('bread-crumb')
 @endsection
 @section('content')
-
+    
     <!--Main Slider-->
     <section class="main-slider">
         <div class="rev_slider_wrapper fullwidthbanner-container" id="rev_slider_one_wrapper" data-source="gallery">
@@ -120,41 +120,41 @@
     </section>
     <!--End Main Slider-->
 
-        <!-- Services Section -->
-        <section class="services-section-two">
-            <div class="auto-container">
+    <!-- Services Section -->
+    <section class="services-section-two">
+        <div class="auto-container">
 
-                <div class="sec-title text-center">
-                    <h2>Our Products</h2>
-                </div>
+            <div class="sec-title text-center">
+                <h2>Our Products</h2>
+            </div>
 
-                <div class="services-carousel owl-carousel owl-theme">
-                    @if ($allProducts)
-                        @foreach ($allProducts as $key => $product)
-                            <!-- Service Block -->
-                            <div class="service-block-two">
-                                <div class="inner-box">
-                                    <div class="image-box">
-                                        <figure class="image"><img
-                                                src="{{ URL::asset(checkAndRenderImage($product['display_image'], 'assets/images/resource/service-2.jpg')) }}"
-                                                alt="">
-                                        </figure>
-                                        <div class="overlay-box"><a href="{{ url('products-detail/' . $product['id']) }}"
-                                                class="read-more">Read More...</a></div>
-                                    </div>
-                                    <div class="lower-content">
-                                        <h4><a href={{ url('products-detail/' . $product['id']) }}>{{ $product['title'] }}</a>
-                                        </h4>
-                                        <div class="text">{!! html_entity_decode($product['small_description']) !!}</div>
-                                    </div>
+            <div class="services-carousel owl-carousel owl-theme">
+                @if ($allProducts)
+                    @foreach ($allProducts as $key => $product)
+                        <!-- Service Block -->
+                        <div class="service-block-two">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <figure class="image"><img
+                                            src="{{ URL::asset(checkAndRenderImage($product['display_image'], 'assets/images/resource/service-2.jpg')) }}"
+                                            alt="">
+                                    </figure>
+                                    <div class="overlay-box"><a href="{{ url('products-detail/' . $product['id']) }}"
+                                            class="read-more">Read More...</a></div>
+                                </div>
+                                <div class="lower-content">
+                                    <h4><a href={{ url('products-detail/' . $product['id']) }}>{{ $product['title'] }}</a>
+                                    </h4>
+                                    <div class="text">{!! html_entity_decode($product['small_description']) !!}</div>
                                 </div>
                             </div>
-                        @endforeach
-                    @endif
-                </div>
+                        </div>
+                    @endforeach
+                @endif
             </div>
-        </section>
-        <!--End Services Section -->
+        </div>
+    </section>
+    <!--End Services Section -->
 
     <!-- Projects Section -->
     {{-- <section class="projects-section style-two">
@@ -716,44 +716,46 @@
                                 <div class="title-box">
                                     <h3>Make An Appointment</h3>
                                 </div>
-                                <form method="post" action="index">
-                                    <div class="row">
-                                        <div class="form-group col-lg-6 col-md-12 col-sm-12">
-                                            <input type="text" name="username" placeholder="Your Name"
-                                                required="">
-                                        </div>
 
-                                        <div class="form-group col-lg-6 col-md-12 col-sm-12">
-                                            <input type="text" name="phone" placeholder="Telephone" required="">
-                                        </div>
-
-                                        <div class="form-group col-lg-12 col-md-12 col-sm-12">
-                                            <input type="email" name="email" placeholder="E-mail Address"
-                                                required="">
-                                        </div>
-
-                                        <div class="form-group col-lg-12 col-md-12 col-sm-12">
-                                            <input type="text" name="subject" placeholder="Subject">
-                                        </div>
-
-                                        <div class="form-group col-lg-6 col-md-12 col-sm-12">
-                                            <input type="text" name="date" placeholder="Date">
-                                        </div>
-
-                                        <div class="form-group col-lg-6 col-md-12 col-sm-12">
-                                            <input type="text" name="time" placeholder="Time">
-                                        </div>
-
-                                        <div class="form-group col-lg-12 col-md-12 col-sm-12">
-                                            <textarea name="message" placeholder="Problem in Detail"></textarea>
-                                        </div>
-
-                                        <div class="form-group col-lg-12 col-md-12 col-sm-12">
-                                            <button class="theme-btn btn-style-two" type="submit"
-                                                name="submit-form">Send Request</button>
-                                        </div>
+                                {{-- <form method="post" action="index"> --}}
+                                {{ Form::open(['url' => url('submit-appointment-form')]) }}
+                                <div class="row">
+                                    <div class="form-group col-lg-6 col-md-12 col-sm-12">
+                                        <input type="text" name="name" placeholder="Your Name" required="">
                                     </div>
-                                </form>
+
+                                    <div class="form-group col-lg-6 col-md-12 col-sm-12">
+                                        <input type="tel" name="phone" placeholder="Telephone" required="">
+                                    </div>
+
+                                    <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                                        <input type="email" name="email" placeholder="E-mail Address"
+                                            required="">
+                                    </div>
+
+                                    <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                                        <input type="text" name="subject" placeholder="Subject">
+                                    </div>
+
+                                    <div class="form-group col-lg-6 col-md-12 col-sm-12">
+                                        <input type="date" name="date" placeholder="Date">
+                                    </div>
+
+                                    <div class="form-group col-lg-6 col-md-12 col-sm-12">
+                                        <input type="time" name="time" placeholder="Time">
+                                    </div>
+
+                                    <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                                        <textarea name="message" placeholder="Problem in Detail"></textarea>
+                                    </div>
+
+                                    <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                                        <button class="theme-btn btn-style-two" type="submit" name="submit-form">Send
+                                            Request</button>
+                                    </div>
+                                </div>
+                                {{-- </form> --}}
+                                {{ Form::close() }}
                             </div>
                         </div>
                     </div>

@@ -58,7 +58,7 @@
             </section>
             <!--End Page Title-->
         @show
-
+        {!! showMessage() !!}
         @yield('content')
 
         @include('layouts.template-fun-fact-section')

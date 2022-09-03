@@ -6,7 +6,7 @@ use App\Http\Controllers\Auth\AdminAuthController;
 use App\Http\Controllers\Admin\AdminController;
 
 use App\Http\Controllers\HomeController;
-
+use App\Http\Controllers\AppointmentController;
 use App\Http\Controllers\AboutUsController;
 // use App\Http\Controllers\TeamController;
 // use App\Http\Controllers\FaqController;
@@ -26,11 +26,12 @@ use App\Http\Controllers\Admin\ContactAdminController;
 // use App\Http\Controllers\RegisterController;
 
 use App\Http\Controllers\Admin\ProductsAdminController;
-
+use App\Http\Controllers\Admin\AppointmentAdminController;
 
 
 
 Route::get('/',[HomeController::class,'index']);
+Route::post('/submit-appointment-form',[AppointmentController::class,'submitAppointmentForm']);
 
 Route::get('/about-us',[AboutUsController::class,'index']);
 Route::get('/team',[TeamController::class,'index']);
@@ -83,6 +84,11 @@ Route::group(['prefix' => 'admin'], function () {
         Route::resource('contact', 'App\Http\Controllers\Admin\ContactAdminController');
         Route::post('contact/get-list', [ContactAdminController::class, 'contact_list_ajax']);
         Route::get('contact/delete/{id}', [ContactAdminController::class, 'destroy']);
+
+        Route::model('appointment', 'App\Models\Appointment');
+        Route::resource('appointment', 'App\Http\Controllers\Admin\AppointmentAdminController');
+        Route::post('appointment/get-list', [AppointmentAdminController::class, 'appointment_list_ajax']);
+        Route::get('appointment/delete/{id}', [AppointmentAdminController::class, 'destroy']);
     });
 
 
