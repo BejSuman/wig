@@ -18,12 +18,9 @@
                                 </div>
 
                                 <div class="widget-content">
-                                    <div class="text">Repairplus brings 25 years of Digital Repairs
-                                        experience right to your Device. Our Texhnicians are equipped to
-                                        help
-                                        you that work best.Our commitment to bring professionalism, good
-                                        service
-                                        & trust to the Phone repair service & maintenance business.</div>
+                                    <div class="text">
+                                       {{--  --}}
+                                    </div>
                                     <ul class="social-icon-two">
                                         <li>Follow Us:</li>
                                         <li><a href="{{url('#')}}"><i class="la la-facebook"></i></a></li>
@@ -96,11 +93,11 @@
                                 <div class="widget-content">
                                     <ul class="contact-list">
                                         <li><span class="la la-map-marker"></span>
-                                            123 Main Street, St. NW Street, 1 Washington, DC,USA.</li>
-                                        <li><span class="la la-envelope"></span><a
-                                                href="{{url('#')}}">business@support.com</a></li>
+                                            {{ env('OFFICE_ADDRESS', '69, Kankurgachhi 2nd Lane, Kolkata-700054, Near Great Eastren.') }}</li>
+                                        {{-- <li><span class="la la-envelope"></span><a
+                                                href="{{url('#')}}">business@support.com</a></li> --}}
                                         <li><span class="la la-phone"></span>
-                                            +92 (0) 012 345 6789</li>
+                                            {{ env('OFFICE_PHONE', '8777036806') }}</li>
                                     </ul>
 
                                     <div class="subscribe-form">

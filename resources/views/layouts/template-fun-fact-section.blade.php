@@ -8,7 +8,7 @@
                 <div class="counter-column col-lg-3 col-md-6 col-sm-12">
                     <div class="count-box">
                         <span class="count-text" data-speed="3000" data-stop="2456">0</span>
-                        <h4 class="counter-title">Mobiles Repaired</h4>
+                        <h4 class="counter-title">Number of sales</h4>
                     </div>
                 </div>
 

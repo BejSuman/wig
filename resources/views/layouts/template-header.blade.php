@@ -20,7 +20,7 @@
                                 <div class="icon-box"><span class="la la-home"></span></div>
                                 <ul>
                                     <li><span>Visit Us</span></li>
-                                    <li>26 Zonal Street, USA</li>
+                                    <li>{{ env('OFFICE_SHORT_ADDRESS', '69, Kankurgachhi 2nd Lane, Kolkata-700054.') }}</li>
                                 </ul>
                             </div>
 
@@ -29,7 +29,7 @@
                                 <div class="icon-box"><span class="la la-phone"></span></div>
                                 <ul>
                                     <li><span>Call Us</span></li>
-                                    <li>+92 300 375 3584</li>
+                                    <li>{{ env('OFFICE_PHONE', '8777036806') }}</li>
                                 </ul>
                             </div>
 
