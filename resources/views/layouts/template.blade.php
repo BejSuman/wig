@@ -20,11 +20,33 @@
 
     <link rel="shortcut icon" href="{{url('assets/images/my-images/logos/favicon.png')}}" type="image/x-icon">
     <link rel="icon" href="{{url('assets/images/my-images/logos/favicon.png')}}" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
     <!-- Responsive -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
     <!--[if lt IE 9]><script src="assets/js/respond.js"></script><![endif]-->
+    <style>
+        .wp-float{
+            position:fixed;
+            width:60px;
+            height:60px;
+            bottom:40px;
+            right:40px;
+            background-color:#25d366;
+            color:#FFF;
+            border-radius:50px;
+            text-align:center;
+            font-size:30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index:100;
+        }
+
+        .wp-my-float{
+            margin-top:16px;
+        }
+    </style>
 </head>
 
 <body>
@@ -68,7 +90,9 @@
         @include('layouts.template-footer')
 
 
-
+        <a href="https://api.whatsapp.com/send?phone=918777036806&text=Hello Hair Disclosure, I want a wig." class="wp-float" target="_blank">
+            <i class="fa fa-whatsapp wp-my-float"></i>
+        </a>
 
 
     </div>

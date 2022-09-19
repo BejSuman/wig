@@ -117,6 +117,9 @@
             <div class="arrow-down scroll-to-target" data-target="#about-us"><span class="icon-arrows"></span>
             </div>
         </div>
+        {{-- <div class="link-box">
+            <a class="theme-btn btn-style-two" href="https://api.whatsapp.com/send?phone=918777036806&text=Hello Hair Disclosure, I want a wig."><i class="fa fa-whatsapp" style="font-size: 26px; color:green"></i></a>
+        </div> --}}
     </section>
     <!--End Main Slider-->
 
@@ -225,5 +228,6 @@
             </div>
         </div>
     </section>
+    {!! showMessage() !!}
     <!--End Call Back Section -->
 @endsection
