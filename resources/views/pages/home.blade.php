@@ -168,7 +168,8 @@
                         <div class="inner-column">
                             <div class="content">
                                 <h3>What type of wig do you need?</h3>
-                                <div class="text">We have almost every type of wigs available here.<br />Please Contact Us on This Number
+                                <div class="text">We have almost every type of wigs available here.<br />Please Contact
+                                    Us on This Number
                                     at <span> {{ env('OFFICE_PHONE', '8777036806') }}</span>.</div>
                             </div>
                         </div>
@@ -183,35 +184,40 @@
                                 </div>
 
                                 {{-- <form method="post" action="index"> --}}
-                                {{ Form::open(['url' => url('submit-appointment-form')]) }}
+                                {{ Form::open(['url' => url('submit-appointment-form'), 'id' => 'appointment-form']) }}
                                 <div class="row">
                                     <div class="form-group col-lg-6 col-md-12 col-sm-12">
-                                        <input type="text" name="name" placeholder="Your Name" required="">
+                                        <input type="text" name="name" placeholder="Your Name"
+                                            value="{{ old('name') }}">
                                     </div>
 
                                     <div class="form-group col-lg-6 col-md-12 col-sm-12">
-                                        <input type="tel" name="phone" placeholder="Telephone" required="">
+                                        <input type="tel" name="phone" placeholder="Telephone"
+                                            value="{{ old('phone') }}">
                                     </div>
 
                                     <div class="form-group col-lg-12 col-md-12 col-sm-12">
                                         <input type="email" name="email" placeholder="E-mail Address"
-                                            required="">
+                                            value="{{ old('emial') }}">
                                     </div>
 
                                     <div class="form-group col-lg-12 col-md-12 col-sm-12">
-                                        <input type="text" name="subject" placeholder="Subject">
+                                        <input type="text" name="subject" placeholder="Subject"
+                                            value="{{ old('subject') }}">
                                     </div>
 
                                     <div class="form-group col-lg-6 col-md-12 col-sm-12">
-                                        <input type="date" name="date" placeholder="Date">
+                                        <input type="date" name="date" placeholder="Date"
+                                            value="{{ old('date') }}">
                                     </div>
 
                                     <div class="form-group col-lg-6 col-md-12 col-sm-12">
-                                        <input type="time" name="time" placeholder="Time">
+                                        <input type="time" name="time" placeholder="Time"
+                                            value="{{ old('time') }}">
                                     </div>
 
                                     <div class="form-group col-lg-12 col-md-12 col-sm-12">
-                                        <textarea name="message" placeholder="Problem in Detail"></textarea>
+                                        <textarea name="message" placeholder="Problem in Detail" value="{{ old('message') }}"></textarea>
                                     </div>
 
                                     <div class="form-group col-lg-12 col-md-12 col-sm-12">
@@ -230,4 +236,40 @@
     </section>
     {!! showMessage() !!}
     <!--End Call Back Section -->
+@endsection
+@section('script')
+    <script src={{ url('assets/js/jquery.validate.min.js') }}></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#appointment-form").validate({
+                rules: {
+                    name: "required",
+                    phone: {
+                        required: true,
+                        maxlength: 10,
+                    },
+                    email: "required",
+                    date: "required",
+                    time: "required",
+                    subject: "required",
+                    // message: "required",
+                },
+                messages: {
+                    name: {
+                        required: "The Name Field is required",
+                        maxlength: "The Name cannot be more than 30 characters"
+                    },
+                    email: {
+                        required: "Email Field is required",
+                        email: "Email must be a valid email address",
+                        maxlength: "Email cannot be more than 50 characters",
+                    },
+                    subject: {
+                        required: "The Subject Field is required",
+                    },
+                }
+            });
+        });
+    </script>
 @endsection

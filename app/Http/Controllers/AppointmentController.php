@@ -8,26 +8,32 @@ use App\Models\Appointment;
 
 class AppointmentController extends Controller
 {
-    public function submitAppointmentForm(Request $request){
-        // $validator = Validator::make(
-        //     [
-        //         'name' => $request->post('name'),
-        //         'email' => $request->post('email'),
-        //         'subject' => $request->post('subject'),
-        //         'message' => $request->post('message'),
-        //     ],
-        //     [
-        //         'name' => 'required|max:255',
-        //         'email' => 'required|max:255|email',
-        //         'subject' => 'required|max:255',
-        //         'message' => 'max:500',
-        //     ]
-        // );
+    public function submitAppointmentForm(Request $request)
+    {
+        $validator = Validator::make(
+            [
+                'name' => $request->post('name'),
+                'phone' => $request->post('phone'),
+                'email' => $request->post('email'),
+                'date' => $request->post('date'),
+                'time' => $request->post('time'),
+                'subject' => $request->post('subject'),
+                'message' => $request->post('message'),
+            ],
+            [
+                'name' => 'required|max:255',
+                'phone' => 'required',
+                'date' => 'required',
+                'time' => 'required',
+                'email' => 'required|max:255|email',
+                'subject' => 'required|max:255',
+                'message' => 'max:500',
+            ]
+        );
 
-        // if ($validator->fails()) {
-        //     return redirect('contact')->withErrors($validator)->withInput();
-        // }
-        // p('success form submit');
+        if ($validator->fails()) {
+            return redirect()->back()->withErrors($validator)->withInput();
+        }
 
         $appointment = new Appointment();
 

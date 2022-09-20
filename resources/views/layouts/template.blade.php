@@ -46,6 +46,10 @@
         .wp-my-float{
             margin-top:16px;
         }
+        label.error {
+            color: #dc3545;
+            font-size: 14px;
+        }
     </style>
 </head>
 
@@ -125,6 +129,7 @@
     <script src="{{url('assets/js/appear.js')}}"></script>
     <script src="{{url('assets/js/mixitup.js')}}"></script>
     <script src="{{url('assets/js/script.js')}}"></script>
+    @yield('script')
 </body>
 
 </html>
