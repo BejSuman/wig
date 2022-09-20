@@ -113,14 +113,12 @@
                                         </li> --}}
                                         <li><a href="{{ url('gallery') }}">Gallery</a></li>
 
-                                        <li class="dropdown"><a href="{{ url('#') }}">shop</a>
+                                        {{-- <li class="dropdown"><a href="{{ url('#') }}">shop</a>
                                             <ul>
-                                                {{-- <li><a href="{{ url('products') }}">Our Products</a></li>
-                                                <li><a href="{{ url('product-detail') }}">Product Details</a></li> --}}
                                                 <li><a href="{{ url('shopping-cart') }}">Shopping Cart</a></li>
                                                 <li><a href="{{ url('checkout') }}">Checkout</a></li>
                                             </ul>
-                                        </li>
+                                        </li> --}}
                                         <li><a href="{{ url('contact-us') }}">Contact Us</a></li>
                                         {{-- <li><a href="{{ url('login') }}">Login</a></li>
                                         <li><a href="{{ url('register') }}">Register</a></li> --}}
@@ -218,14 +216,12 @@
                                         </ul>
                                     </li> --}}
                                     <li><a href="{{ url('gallery') }}">Gallery</a></li>
-                                    <li class="dropdown"><a href="{{ url('#') }}">shop</a>
-                                        <ul>
-                                            {{-- <li><a href="{{ url('products') }}">Our Products</a></li>
-                                            <li><a href="{{ url('product-detail') }}">Product Details</a></li> --}}
-                                            <li><a href="{{ url('shopping-cart') }}">Shopping Cart</a></li>
-                                            <li><a href="{{ url('checkout') }}">Checkout</a></li>
-                                        </ul>
-                                    </li>
+                                        {{-- <li class="dropdown"><a href="{{ url('#') }}">shop</a>
+                                            <ul>
+                                                <li><a href="{{ url('shopping-cart') }}">Shopping Cart</a></li>
+                                                <li><a href="{{ url('checkout') }}">Checkout</a></li>
+                                            </ul>
+                                        </li> --}}
                                     <li><a href="{{ url('contact-us') }}">Contact Us</a></li>
                                     {{-- <li><a href="{{ url('login') }}">Login</a></li>
                                     <li><a href="{{ url('register') }}">Register</a></li> --}}
